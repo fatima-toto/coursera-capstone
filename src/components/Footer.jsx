@@ -1,4 +1,4 @@
-import logo from '../assets/home icon.svg'
+import logo from '../assets/creditcard.svg'
 
 function Footer()
 {

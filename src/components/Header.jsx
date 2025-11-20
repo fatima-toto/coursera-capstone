@@ -7,7 +7,7 @@ function Header()
     <header className='header'>
 <nav>
   <ul>
-    <li><img src={logo}/></li>
+    <li><a><img src={logo}/></a></li>
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
     <li><a href="#">Menu</a></li>

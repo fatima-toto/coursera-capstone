@@ -1,20 +1,21 @@
 import logo from '../assets/Logo.svg'
+ 
+import {Routes,Route,Link} from 'react-router-dom'
 import '../App.css'
 function Header()
 {
   return(
     <>
     <header className='header'>
+      
 <nav>
-  <ul>
-    <li><a><img src={logo}/></a></li>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Menu</a></li>
-    <li><a href="#">Reservation</a></li>
-    <li><a href="#">Ordrer online</a></li>
-    <li><a href="#">Login</a></li>
-  </ul>
+   <img src={logo}/>
+  <Link to='/' className='li'>Home</Link>
+  <Link to='/about-page' className='li'>About</Link>
+  <Link to='/menu-page' className='li'>Menu</Link>
+  <Link to='/reserve-page' className='li'>Reservation</Link>
+  <Link to='/order-page' className='li'>Ordrer online</Link>
+  <Link to='/login-page' className='li'>Login</Link>
 </nav>
     </header>
     </>

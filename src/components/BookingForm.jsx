@@ -1,5 +1,5 @@
 import '../App.css'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {useFormik} from 'formik'
 import * as yup from 'yup'
@@ -37,6 +37,15 @@ date:yup.string().required('Requird')
 
 
   });
+
+useEffect(()=>{
+
+  fetch('https://raw.githubusercontent.com/courseraap/capstone/main/api.js')
+  .then((response)=>response.text())
+  .then((res)=>console.log(res))
+  .catch((err)=>console.log(`err in fetch ${err}`));
+
+},[]);
 
 
    

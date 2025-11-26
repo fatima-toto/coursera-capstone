@@ -28,6 +28,7 @@ setnumber('1');
   
 setdate('');
 navigate('/confirm-page');
+console.log('submited');
 },
 validationSchema:yup.object({
 date:yup.string().required('Requird')
